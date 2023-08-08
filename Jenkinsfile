@@ -7,5 +7,19 @@ pipeline {
       }
     }
 
+    stage('test') {
+      steps {
+        sh '''pwd
+date
+'''
+      }
+    }
+
+    stage('deploy') {
+      steps {
+        echo 'hello deploy'
+      }
+    }
+
   }
 }
